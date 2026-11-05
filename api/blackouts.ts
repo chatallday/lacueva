@@ -19,7 +19,7 @@ export default async function handler(req: Request) {
     const url = new URL(req.url);
     const date = url.searchParams.get('date');
     
-    const filter: Array<{ fieldId: string; operator: string; value: any }> = [];
+    const filter: Array<{ fieldId: string; operator: 'eq'; value: any }> = [];
     if (date) {
       filter.push({ fieldId: 'date', operator: 'eq', value: date });
     }
