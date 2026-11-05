@@ -1325,9 +1325,21 @@ async function startServer() {
     });
   }
 
-  httpServer.listen(PORT, "0.0.0.0", () => {
+  // Vercel serverless export
+  return app;
+}
+
+// Export for Vercel serverless functions
+const _app = await startServer();
+export default _app;
+export { _app as app };
+
+// Start listening when running locally (not on Vercel)
+if (!process.env.VERCEL) {
+  const PORT = 3003;
+  // Need to re-create httpServer for listening
+  // Since startServer() doesn't listen anymore, we'll just use the app
+  _app.listen(PORT, "0.0.0.0", () => {
     console.log(`\n🌿 La Cueva Del Chango PWA server running → http://localhost:${PORT} (tenant: lacuevadelchango)\n`);
   });
 }
-
-startServer();
