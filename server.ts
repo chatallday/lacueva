@@ -803,7 +803,7 @@ async function startServer() {
   // ============================================================
   app.post('/api/admin/verify', async (req, res) => {
     try {
-      const body = await req.json().catch(() => ({}));
+      const body = req.body || {};
       const password = body?.password;
       console.log('[verify] Attempt with:', password ? 'provided' : 'empty');
       const ok = await checkAdminPassword(password);
