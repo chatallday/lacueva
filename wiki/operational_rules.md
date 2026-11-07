@@ -87,3 +87,9 @@ Phase 6 — QA / Deploy: lint/build gates, port 3003 dev, Vercel `vercel.json:13
 - [ ] Phase 3: Menu ingestion for La Cueva
 - [ ] Phase 4-5: Persona + frontend tenant refactor
 - [ ] Phase 6: Vercel domain `lacuevadelchango.com` + PWA icons regen
+
+## 11. Critical Working Directory Rule
+- **NEVER access the C: drive.** All work must be done within the project folder: `F:\Mike d drive\Mike Webs\Client Projects\Amate and Changa\La Cueva del Chango\cueva-pwa`
+- The default working directory `C:\Users\470 G3\Documents\Default Project` is NOT the project folder.
+- Never read, write, or execute commands targeting C: drive paths.
+- Always use the project folder path for all file operations.
