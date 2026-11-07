@@ -14,5 +14,5 @@
 - Phone: +52 (984) 147-0271; Email: info@lacuevadelchango.com
 - Teable base: bseycH4L66iLE60akaY, tenant: lacuevadelchango
 - Production: https://cueva-pwa.vercel.app
-- GitHub: https://github.com/dynamicmike-dashboard/cueva.git
-- Vercel: chatalldays-projects team, deployed via CLI (vercel deploy --prod)
+- GitHub: https://github.com/chatallday/lacueva.git
+- Vercel: chatalldays-projects team, deployed via CLI (vercel deploy --prod) + GitHub auto-deploy connected
